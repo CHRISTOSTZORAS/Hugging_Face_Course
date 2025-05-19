@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.ipynb_checkpoints
+
+# Virtual Environments
+huggingfaceenv/
+.env/
+venv/
+ENV/
+env/
+*.env
+
+# VSCode settings
+.vscode/
+*.code-workspace
+
+# OS/Editor/System files
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Conda/Cache
+.conda/
+.condarc
+anaconda3/
+token
+stored_tokens
+keyring
+.cache/
+.config/
+*.token
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Outputs
+*.h5
+*.pth
+*.ckpt
+*.pt
+*.onnx
+*.tflites
+*.joblib
+*.npz
+*.npy
+
+# Data
+data/
+datasets/
+*.csv
+*.tsv
+*.zip
+*.tar.gz
+*.gz
+
+# Models
+models/
+checkpoints/
+
+# Others
+*.sqlite3
+*.db
+*.pid
