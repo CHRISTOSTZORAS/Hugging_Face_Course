@@ -19,16 +19,6 @@ def suggest_menu(occasion:str)->str:
         return "Buffet with high-energy and healthy food."
     else:
         return "Custom menu for the butler."
-# ✅ Step 1: Create client with correct model
-client = InferenceClient(model="mistralai/Mistral-7B-Instruct-v0.1")
 
-# ✅ Step 2: Use it in InferenceClientModel explicitly
-model = InferenceClientModel(client=client)
-
-# ✅ Step 3: Create agent with this model
-agent = CodeAgent(tools=[suggest_menu], model=model)
-
-# ✅ Step 4: Run
-output = agent.run("Prepare a formal menu for the party")
-print(output)
+agent = CodeAgent(tools=[suggest_menu], model=InferenceClientModel())
 
